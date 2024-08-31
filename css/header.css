@@ -1,0 +1,131 @@
+header {
+    background-color: #434343f3;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    transition: all 0.3s;
+}
+
+.logo:active {
+    transform: scale(0.9);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-input,
+.nav-menubar {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-list {
+    max-width: 103px;
+}
+
+.nav-item {
+    max-width: 103px;
+    padding: 5px 0;
+    color: #EBFFEE;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.nav-item::before {
+    content: '';
+    width: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 5px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    margin: 0 auto;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.header-button {
+    max-width: 101px;
+    display: flex;
+    align-items: center;
+}
+
+.header-button a button {
+    max-width: 101px;
+    cursor: pointer;
+    border: 1px solid #767676;
+    border-radius: 13px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #9a969fe5;
+    transition: all 0.3s;
+}
+
+.header-button a button:hover {
+    color: #f3f3f3;
+    background-color: #b2b2b2;
+}
+
+.header-button a button:active {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width:736px) {
+    .nav-menubar {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        display: none;
+        width: 100%;
+        padding: 20px 0;
+        flex-direction: column;
+        background-color: #717171bf;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        transition: 0.5s;
+    }
+    #menubar:checked+.navbar {
+        transition: 1s;
+        display: block;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header-button {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .header-button a button {
+        background-color: #434343f3;
+        color: #b2b2b2;
+    }
+}
