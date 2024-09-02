@@ -8,7 +8,6 @@
 @import url(index_home.css);
 @import url(header.css);
 @import url(footer.css);
-
 * {
     margin: 0;
     padding: 0;
@@ -26,18 +25,17 @@ html {
 
 body {
     font-family: 'Poppins';
-    background-color: #000;
+    background-color: #D2D2D2;
     height: 100%;
     display: flex;
     flex-direction: column;
     font-size: 16px;
     font-weight: 400;
-    cursor: none;
 }
 
 main {
     flex-grow: 1;
-    margin-top: 85px;
+    margin-top: 100px;
 }
 
 img {
@@ -46,7 +44,7 @@ img {
 }
 
 ::selection {
-    background: #00000076;
+    background: #000000;
     color: #fff;
 }
 
@@ -89,33 +87,4 @@ img {
     color: #fff;
     position: absolute;
     bottom: 3px;
-}
-
-.custom-cursor {
-    z-index: 1000;
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-    transition: transform 0.1s ease;
-}
-
-.custom-cursor::before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width:736px) {
-    .custom-cursor {
-        display: none;
-    }
 }

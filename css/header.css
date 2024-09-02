@@ -15,7 +15,7 @@ header {
 
 .logo {
     transition: all 0.3s;
-    cursor: none;
+    cursor: pointer;
 }
 
 .logo:active {
@@ -50,7 +50,6 @@ header {
     transition: all 0.5s;
     position: relative;
     user-select: none;
-    cursor: none;
 }
 
 .nav-item::before {
@@ -81,7 +80,7 @@ header {
 
 .header-button a button {
     max-width: 101px;
-    cursor: none;
+    cursor: pointer;
     border: 1px solid #767676;
     border-radius: 13px;
     font-size: 16px;
