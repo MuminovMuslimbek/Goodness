@@ -31,6 +31,7 @@ footer {
 }
 
 .nav-item-fotter {
+    cursor: none;
     max-width: 103px;
     padding: 5px 0;
     color: #EBFFEE;
@@ -72,9 +73,14 @@ footer {
     gap: 25px;
 }
 
+.footer-links a {
+    cursor: none;
+}
+
 .footer-links img {
     width: 35px;
     transition: all 0.5s;
+    cursor: none;
 }
 
 .footer-links img:hover {

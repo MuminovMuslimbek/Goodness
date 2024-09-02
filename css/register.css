@@ -14,7 +14,7 @@ main {
 
 .register-paragraph {
     user-select: none;
-    cursor: text;
+    cursor: none;
     font-size: 20px;
     color: #fff;
     letter-spacing: 2px;
@@ -119,7 +119,7 @@ body {
 
 .login__btn,
 .login__eye {
-    cursor: pointer;
+    cursor: none;
     display: block;
     outline: transparent;
     transition: background-color var(--trans-dur), box-shadow var(--trans-dur), color var(--trans-dur), opacity var(--trans-dur);
@@ -136,7 +136,7 @@ body {
 }
 
 .login__btn:disabled {
-    cursor: not-allowed;
+    cursor: none;
     opacity: 0.5;
 }
 
@@ -365,7 +365,7 @@ body {
 
 .login__label {
     color: hsl(var(--hue), 10%, 30%);
-    cursor: text;
+    cursor: none;
     display: flex;
     position: absolute;
     bottom: 1em;
@@ -466,7 +466,7 @@ body {
     border-radius: 0.875em;
     box-shadow: 0 0 0 0.1875em var(--focus-t) inset;
     color: hsl(var(--hue), 10%, 40%);
-    cursor: pointer;
+    cursor: none;
     outline: transparent;
     padding: 0.75em;
     width: 100%;
@@ -521,7 +521,7 @@ body {
 .login__social-btn {
     border-radius: 50%;
     box-shadow: 0 0 0 0.1875em var(--focus-t);
-    cursor: pointer;
+    cursor: none;
     display: flex;
     outline: transparent;
     width: 3em;
@@ -725,7 +725,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    cursor: none;
     display: inline-flex;
     gap: 5px;
     left: 10px;
