@@ -4,6 +4,7 @@ header {
     padding: 15px 0;
     position: fixed;
     z-index: 100;
+    box-shadow: 2px 5px 50px rgba(0, 0, 0, 0.905);
 }
 
 .header-container {
