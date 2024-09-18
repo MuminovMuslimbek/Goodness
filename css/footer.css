@@ -1,5 +1,6 @@
 footer {
-    background-color: #323232;
+    background-color: #313131d4;
+    backdrop-filter: blur(10px);
     padding: 30px 0;
     box-shadow: 2px 5px 50px rgba(0, 0, 0, 0.905);
 }

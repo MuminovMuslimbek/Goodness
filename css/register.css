@@ -85,6 +85,7 @@ body {
     margin: 0 0 1.5rem;
     text-align: center;
     user-select: none;
+    color: #fff;
 }
 
 .login__account {
@@ -136,6 +137,7 @@ body {
     margin-bottom: 1.5em;
     padding: 0.75em 0.5em;
     width: 100%;
+    margin-top: 30px;
 }
 
 .login__btn:disabled {
@@ -249,7 +251,6 @@ body {
 
 .login__field {
     position: relative;
-    margin-bottom: 2.25em;
     transition: opacity var(--trans-dur);
 }
 
@@ -263,6 +264,12 @@ body {
     width: 1.5em;
     height: 1.5em;
     transition: opacity var(--trans-dur);
+}
+
+.input-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 [dir=rtl] .login__field-check {
@@ -340,10 +347,17 @@ body {
     border-radius: 0.75em;
     box-shadow: 0 0 0 0.125em hsl(var(--hue), 10%, 80%) inset;
     outline: transparent;
-    padding: 1.5em 1em 0.5em 1em;
+    padding: 18px 28px;
     padding-inline-end: 3.5em;
     width: 100%;
     transition: box-shadow var(--trans-dur), color var(--trans-dur);
+    margin-bottom: 3px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 540;
+    color: #cccccc;
 }
 
 .login__input-textbox:not(:disabled):focus-visible {

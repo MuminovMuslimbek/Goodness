@@ -1,5 +1,9 @@
 @import url(global.css);
 
+.hero {
+    padding: 0 15px;
+}
+
 .carousel {
     border-radius: 15px;
     width: 100%;
@@ -192,19 +196,11 @@
     align-items: center;
 }
 
-.category-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.category-card-link {
-    max-width: 268px;
-    padding: 30px 20px;
+.table {
     display: flex;
     align-items: center;
-    text-align: center;
-    background-color: #757575;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .category-menu {
@@ -213,7 +209,7 @@
     justify-content: center;
 }
 
-.category-menu td {
+.category-menu>td a {
     padding: 20px 10px;
     display: flex;
     text-align: center;
@@ -226,7 +222,7 @@
     transition: all 0.3s ease-out;
 }
 
-.category-menu td:hover {
+.category-menu a:hover {
     background-color: #757575;
     color: #ffffffab;
     transform: scale(0.96);

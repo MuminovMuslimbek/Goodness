@@ -44,6 +44,10 @@ img {
     margin-bottom: 0;
 }
 
+a {
+    color: #333333;
+}
+
 ::selection {
     background: #000000;
     color: #fff;

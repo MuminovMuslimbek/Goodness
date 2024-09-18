@@ -95,14 +95,18 @@
 
 
                             <div class="login__field">
-                                <input class="login__input-textbox" id="user-email" type="email" required name="email"
-                                    autocomplete="off"
-                                    pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`\{\|\}]+@[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$"
-                                    placeholder=" ">
-                                <label class="login__label" for="user-email">Email</label>
-                                <svg class="login__field-check" width="16px" height="16px" aria-hidden="true">
-                                    <use href="#check" />
-                                </svg>
+                                <div class="input-wraper">
+                                    <input style="position: relative;" class="login__input-textbox" id="user-name"
+                                        type="text" required name="user-name" autocomplete="off"
+                                        placeholder="Enter your name">
+                                    <input class="login__input-textbox" id="user-email" type="email" required
+                                        name="email" autocomplete="off"
+                                        pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`\{\|\}]+@[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$"
+                                        placeholder="Enter your email">
+                                    <input class="login__input-textbox" id="user-email" type="password" required
+                                        name="password" autocomplete="off" minlength="8" maxlength="15" required
+                                        placeholder="Enter your password">
+                                </div>
                                 <div class="login__error">
                                     <svg class="login__error-icon" width="12px" height="12px" aria-hidden="true">
                                         <use href="#warning" />
@@ -143,23 +147,10 @@
                                 <a class="login__forgot" href="#">Forgot password?</a>
                                 <input class="login__input-textbox" id="user-password" type="password" name="password"
                                     autocomplete="off" placeholder=" " minlength="8" maxlength="15">
-                                <label class="login__label" for="user-password">Password</label>
+                                <label class="login__label" for="user-password"></label>
                                 <div class="login__error">
-                                    <svg class="login__error-icon" width="12px" height="12px" aria-hidden="true">
-                                        <use href="#warning" />
-                                    </svg>
                                     <span id="password-error" aria-live="assertive"></span>
                                 </div>
-                                <button class="login__eye" type="button" title="Show password" data-action="password">
-                                    <svg class="login__eye-icon" width="24px" height="24px" data-icon="eye-off"
-                                        aria-hidden="true">
-                                        <use href="#eye-off" />
-                                    </svg>
-                                    <svg class="login__eye-icon" width="24px" height="24px" data-icon="eye-on"
-                                        aria-hidden="true" display="none">
-                                        <use href="#eye-on" />
-                                    </svg>
-                                </button>
                             </div>
                             <button class="login__btn" type="submit" data-action="login">Sign In</button>
                             <button class="login__btn login__btn--secondary" type="button"
