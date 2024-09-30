@@ -1,5 +1,4 @@
 @import url(global.css);
-
 main {
     margin-top: 0;
     display: flex;
@@ -92,10 +91,31 @@ input:focus {
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.5px;
+    max-width: 100px;
+    padding: 5px 0;
+    transition: all 0.5s;
+    position: relative;
+    user-select: none;
 }
 
-.singin:hover {
-    border-bottom: 2px solid #fdfdfd;
+.singin::before {
+    content: '';
+    width: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    margin: 0 auto;
+}
+
+.singin:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 @media screen and (max-width:421px) {
@@ -103,7 +123,6 @@ input:focus {
         max-width: 390px;
         width: 100%;
     }
-
     .or_span {
         display: none;
     }

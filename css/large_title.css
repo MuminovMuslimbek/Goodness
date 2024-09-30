@@ -1,0 +1,43 @@
+.large_title__container {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.large_title__container h1 {
+    font-size: 210px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    line-height: 300px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px hsla(0, 0%, 100%, .1);
+    margin-bottom: -185px;
+}
+
+.large_title__container p {
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 94px;
+    -webkit-text-fill-color: #fff;
+    letter-spacing: 3px;
+}
+
+.community {
+    padding: 60px 0;
+}
+
+.community__container {
+    display: flex;
+    align-items: start;
+    padding: 100px;
+}
+
+.community__container>h1 {
+    color: #fff;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    font-size: 64px;
+    line-height: 13%;
+    font-weight: 700;
+}
