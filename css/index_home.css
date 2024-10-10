@@ -1,5 +1,4 @@
 @import url(global.css);
-
 .hero {
     padding: 0 15px;
 }
@@ -126,28 +125,22 @@
     header input {
         padding: 10px 15px;
     }
-
     header ul {
         padding: 6px;
     }
-
     .caption h2 {
         font-size: 16px;
     }
-
     .caption h3 {
         font-size: 20px;
     }
-
     .caption p {
         font-size: 14px;
     }
-
     .navigation button {
         font-size: 20px;
         padding: 8px;
     }
-
     .carousel {
         max-width: 1000px;
         max-height: 450px;
@@ -160,23 +153,18 @@
         padding: 20px 16px;
         justify-content: center;
     }
-
     .slide img {
         height: 300px;
     }
-
     .caption h2 {
         font-size: 11px;
     }
-
     .caption h3 {
         font-size: 11px;
     }
-
     .caption p {
         font-size: 8px;
     }
-
     .caption {
         bottom: 10px;
         left: 10px;
@@ -252,7 +240,6 @@
     .category-menu {
         flex-wrap: wrap;
     }
-
     .category-menu td {
         max-width: 380px;
         align-items: start;
@@ -325,26 +312,21 @@
     .news-container {
         flex-direction: column;
     }
-
     .news-img {
         max-width: 100%;
         max-height: 500px;
         height: 100%;
     }
-
     .news-text {
         min-width: 100%;
     }
-
     .news-text h2 {
         font-size: 28px;
     }
-
     .news-text p {
         font-size: 18px;
         line-height: 24px;
     }
-
     .caption h3 {
         font-size: 14px;
         margin: 0;
@@ -355,20 +337,16 @@
     .news {
         padding: 40px 0;
     }
-
     .news-text {
         gap: 10px;
     }
-
     .news-text h2 {
         font-size: 22px;
     }
-
     .news-text h3 {
         margin-top: 0;
         font-size: 18px;
     }
-
     .news-text p {
         font-size: 12px;
         line-height: 18px;
