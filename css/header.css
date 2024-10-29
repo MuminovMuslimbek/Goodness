@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background-color: #112119;
+    background-color: #141415;
     backdrop-filter: blur(10px);
     padding: 15px 0;
     position: fixed;
@@ -13,6 +13,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    gap: 30px;
 }
 
 .logo {
@@ -25,9 +26,11 @@ header {
 }
 
 .navbar {
+    max-width: 780px;
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 35px;
 }
 
 .nav-input,
@@ -36,22 +39,51 @@ header {
 }
 
 .menu {
+    max-width: 700px;
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 35px;
 }
 
 .nav-list {
-    max-width: 103px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.nav-list:nth-last-child(1) {
+    max-width: 150px;
+    width: 100%;
 }
 
 .nav-item {
-    max-width: 103px;
+    max-width: 130px;
+    width: 100%;
     padding: 5px 0;
     color: #EBFFEE;
     transition: all 0.5s;
     position: relative;
     user-select: none;
+}
+
+.nav-number {
+    width: 218px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+    color: rgb(154 175 178);
+}
+
+.nav-number:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255)
+}
+
+.nav_number {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255)
 }
 
 .nav-item::before {
@@ -112,11 +144,11 @@ header {
     .navbar {
         display: none;
         width: 100%;
-        padding: 20px 0;
+        padding: 25px 0;
         flex-direction: column;
-        background-color: #192b1d96;
+        background-color: #141415;
         position: absolute;
-        top: 70px;
+        top: 69px;
         left: 0;
         transition: 0.5s;
     }
