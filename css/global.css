@@ -245,3 +245,15 @@ a {
     font-family: 'Raleway', sans-serif;
     color: #000;
 }
+
+.toTopButton {
+    background: #fff;
+    border-radius: 50%;
+    bottom: 12%;
+    color: #333333;
+    font-weight: 600;
+    padding: 5px 8px 4px 8px;
+    position: fixed;
+    right: 3%;
+    z-index: 99999;
+}
